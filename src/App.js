@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Ship from "./components/Ship";
 import './App.scss';
 
-class App extends React.Component {
+class App extends Component {
   constructor(props){
     super(props);
     this.state = {
@@ -21,7 +21,7 @@ class App extends React.Component {
   
 
   render() {
-    const { ships } = this.state;
+    const {ships} = this.state;
 
     return (
       <div className="App">
